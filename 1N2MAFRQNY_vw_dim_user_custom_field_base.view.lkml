@@ -1,6 +1,6 @@
 
 view: 1N2MAFRQNY_vw_dim_user_custom_field_base {
-sql_table_name: vwDimUserCustomField_1N2MAFRQNY ;;
+sql_table_name: [RPT].[vwDimUserCustomField_1N2MAFRQNY] ;;
 label: "coolCompany-1N2MAFRQNYCustom Fields"
 dimension: adp_file_number {
     sql: ${TABLE}.[ADP File Number] ;;
