@@ -22,6 +22,13 @@ explore: fact_transaction {
   }
 
 
+  join: 1RVX9T1T1W_vw_dim_user_profile_field {
+    type: left_outer
+    sql_on:  ${vw_fact_transaction_entry.user_profile_field_key} = ${1RVX9T1T1W_vw_dim_user_profile_field.user_profile_field_key}  ;;
+    relationship: many_to_one
+    #fields: []
+  }
+
   join: vw_dim_foundation {
     fields: []
   }
